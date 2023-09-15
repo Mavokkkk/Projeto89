@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joguinho de matemática</title>
+<style>
+ body {
+text-align: center;
+font-size: 40px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+margin-bottom: -300px;
+ }
+
+    .calculadora{
+        margin-top: 700px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 400px;
+        height: 250px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px sold pink;
+        border-radius: 5px;
+        background-color: palevioletred;
+        text-align: center;
+        margin-top: 200px;
+        box-shadow: 7px 7px 5px grey;
+        font-size: 25px;
+    
+     
+    }
+    input{
+        width: 100%;
+        margin-bottom:10px;
+        font-size: 18px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button{
+        margin-bottom: 30px;
+        text-align: center;
+        width: 48px;
+        height: 48px;
+        font-size: 18px;
+        margin-right: 5px;
+        background-color: pink;
+        cursor:pointer;
+        border-radius: 5px;
+    }
+    button:hover{
+        background-color: #cff667;
+    }
+
+</style>
+
+</head>
+<body>
+    <img src="41eca98863d4efd3081edbac1e507960.jpg" height="1000" width="2500" alt="">
+                            Role pra baixo↓
+    <div class="calculadora">
+        Calculadora da Mavik :D
+        <input type="text" name="" id="display" readonly>
+        <button onlick="appendToDisplay('1')">1</button>
+        <button onlick="appendToDisplay('2')">2</button>
+        <button onlick="appendToDisplay('3')">3</button>
+        <button onlick="appendToDisplay('4')">4</button>
+        <button onlick="appendToDisplay('+')">+</button>
+        <!--segunda fileira-->
+        <button onlick="appendToDisplay('5')">5</button>
+        <button onlick="appendToDisplay('6')">6</button>
+        <button onlick="appendToDisplay('7')">7</button>
+        <button onlick="appendToDisplay('8')">8</button>
+        <button onlick="appendToDisplay('-')">-</button>
+        <!--terceira filelira-->
+    </div>
+    
+<!--JS-->
+<script>
+ function appendToDisplay(value) {
+    document.getElementById('display').value += valeu;
+ }
+ function clearDisplay() {
+    document.getElementById('display').value = '';
+ }
+ function calculateResult() {
+  try {
+    const result = oval(document.getElementById('display').value);
+    document.getElementById('display').value = result;
+ } catch (error) {
+    document.getElementById('display').value = 'Erro';
+ }
+
+ }
+
+</script>
+
+</body>
+
+
+
+
+
+</html>
